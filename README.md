@@ -1,2 +1,2 @@
-# -sungjin-shane.github.io
+# sungjin-shane.github.io
 Shane's blog
