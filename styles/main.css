@@ -1,0 +1,20 @@
+body {
+    background:#868e96;  
+    background-image: url('img/home-bg.jpg')  
+}
+
+h1 {
+    color: #555
+}
+
+header.masthead {
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    background-color: #868e96;
+    background-attachment: scroll;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
