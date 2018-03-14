@@ -1,6 +1,6 @@
 body {
     background:#868e96;  
-    background-image: url('img/home-bg.jpg');  
+    background-image: url('../img/home-bg.jpg');  
 }
 
 h1 {
