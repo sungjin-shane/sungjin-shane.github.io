@@ -1,13 +1,11 @@
-body {
-    background:#868e96;  
-    background-image: url('../img/home-bg.jpg'); 
-    background: no-repeat center center; 
-}
-
-body {
+  body {
     font-size: 20px;
     color: #212529;
     font-family: 'Lora', 'Times New Roman', serif;
+    margin-bottom: 350px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-image: url('../img/home-bg.jpg'); 
   }
   
   p {
@@ -34,6 +32,7 @@ body {
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
   a:focus, a:hover {
