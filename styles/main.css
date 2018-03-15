@@ -30,7 +30,6 @@
     text-decoration: underline;
   }
   
-  h1,
   h2,
   h3,
   h4,
@@ -38,6 +37,15 @@
   h6 {
     font-weight: 800;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    color: #2babe1;
+    font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.25em;
+    margin: 0.5em 0;
   }
   
   a {
