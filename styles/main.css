@@ -8,12 +8,17 @@
     font-size: 20px;
     color: #212529;
     font-family: 'Lora', 'Times New Roman', serif;
-    margin-bottom: 350px;
+    /*margin-bottom: 350px;
     background-repeat: no-repeat;
     background-position: center; 
-    background-image: url('../img/home-bg.jpg'); 
+    background-image: url('../img/home-bg.jpg'); */
   }
   
+  .page-header {
+    padding-bottom:9px;
+    margin:40px 0 20px;
+    border-bottom:1px solid #eee
+  }  
   .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -40,8 +45,8 @@
   }
 
   h1 {
-    color: #2babe1;
-    font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    color: #0275d8;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-weight: 500;
     line-height: 1.25em;
