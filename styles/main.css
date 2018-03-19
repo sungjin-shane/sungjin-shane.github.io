@@ -1,56 +1,76 @@
   body {
     font-size: 20px;
     color: #212529;
-    font-family: 'Lora', 'Times New Roman', serif;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  .main-body {
-    font-size: 20px;
-    color: #212529;
-    font-family: 'Lora', 'Times New Roman', serif;
-    /*margin-bottom: 350px;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-image: url('../img/home-bg.jpg'); */
-  }
+  .top-body {
+    padding:1px 0px 1px; 
+    margin:10px 0 10px;
+    /*border-bottom:1px solid #eee;*/
+    /*background-color: #0cecec;*/
+    color: #3c16e6;
+    text-align: center;
+    font-weight: 200;
+    background-repeat: repeat;
+    background-image: url('../img/home-bg3.jpg');
+  }  
   
   .page-header {
     padding-bottom:9px;
     margin:40px 0 20px;
-    border-bottom:1px solid #eee
-  }  
+    border-bottom:1px solid #eee;
+  } 
+
   .jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1.5rem;
     background-color: #eceeef;
-    border-radius: 0.3rem;
+    border-radius: 0.3rem;   
+  }  
+  .jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+
+} p {
+    line-height: 1.5;
+    margin: 10px 0;
+    font-size: 15px;
   }
 
-  p {
-    line-height: 1.5;
-    margin: 30px 0;
-  }
-  
   p a {
     text-decoration: underline;
   }
   
-  h2,
   h3,
   h4,
   h5,
   h6 {
-    font-weight: 800;
+    font-weight: 500;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   h1 {
-    color: #0275d8;
+    color: #00070c;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25em;
+    margin: 0.5em 0;
+  }  
+  h2 {
+    color: #1946da;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.25em;
     margin: 0.5em 0;
+  }
+  h3 {
+    color: #f50c0c;
+    font-weight: 500;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
   a {
@@ -71,6 +91,11 @@
     border-color: #0275d8;
   }
 
+  .btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+  }
   .container {
     position: relative;
     margin-left: auto;
@@ -91,6 +116,13 @@
     margin-left: -15px;
   }
   
+  .col-md-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33%;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
   .col-md-6 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
