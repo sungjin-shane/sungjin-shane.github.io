@@ -1,0 +1,88 @@
+*{
+  border: 1px solid white !important;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h1{
+  background-color: #DDE0E3;    /* Light gray */
+  display:block;                  /* change box behavior: block or inline */
+  color:blue;
+}
+h2{
+    background-color: #DDE0E3;    /* Light gray */
+    display:block;                  /* change box behavior: block or inline */
+    color:black;
+  }
+em, strong {
+    background-color: #B2D6FF;    /* Light blue */
+    display:inline;                 /* change box behavior: block or inline */
+  }
+.row {
+    wodth: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.col-1{
+  width: 8.33%;
+}.col-2{
+  width: 16.66%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%; 
+}
+.col-7{
+  width: 58.33%; 
+}
+.col-8{
+  width: 66.66%; 
+}
+@media only screen and (max-width: 500px) {
+  p {
+    display: none;
+  }
+}
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}

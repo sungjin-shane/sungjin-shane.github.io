@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Boxes Are Easy!</title>
+    <link rel='stylesheet' href='styles/box-styles.css'/>
+  </head>
+  <body>
+    <h1>Headings Are Block Elements</h1>
+
+    <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+       elements are not. They are <strong>inline</strong> elements.</p>
+
+    <p>Block elements define the flow of the HTML document, while inline elements
+       do not.</p>
+    <img src="img/inline-vs-block-boxes.png" alt="boxes images" whidth="300" height="150">   
+    <ul>
+        This shows us a couple of very important behaviors associated with block and inline boxes:
+        <li>Block boxes always appear below the previous block element. This is the “natural” or “static” flow of an HTML document when it gets rendered by a web browser.</li>
+        <li>The width of block boxes is set automatically <strong>based on the width of its parent container.</strong><br>In this case, our blocks are always the width of the browser window.
+        <li>The default height of block boxes is <strong>based on the content it contains.</strong> When you narrow the browser window, the 
+            <code>&lt;h1&gt;</code> gets split over two lines, and its height adjusts accordingly.</li>
+        <li>Inline boxes don’t affect vertical spacing. They’re not for determining layout—they’re for styling stuff inside of a block.</li>
+        <li>The width of inline boxes is based on the content it contains, not the width of the parent element.</li>
+    </ul>
+
+
+  </body>
+</html>
