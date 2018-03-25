@@ -20,10 +20,24 @@ h2{
     display:block;                  /* change box behavior: block or inline */
     color:black;
   }
+h3{
+  background-color: #DDE0E3;    /* Light gray */
+  display:block;                  /* change box behavior: block or inline */
+  color:red;
+}  
 em, strong {
     background-color: #B2D6FF;    /* Light blue */
     display:inline;                 /* change box behavior: block or inline */
   }
+  
+hr {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    height: 1;
+    overflow: visible;
+    background-color:black;
+  }
+
 .row {
     wodth: 100%;
     display:flex;
