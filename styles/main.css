@@ -21,3 +21,11 @@
   background-color: #fff;
   text-align: center;
 }
+.main-img{
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+  max-height: 362px;
+  width: 400;
+  z-index: 3;
+}
