@@ -1,15 +1,16 @@
 *{
-  border: 1px solid red !important;
+  border: 1px solid none !important;
 }
 
 .navbar {
   position: relative;
   display: flex;
   padding: 0.5rem 1rem;
-}
+  background-color:#020220;
+ }
 .nav-ul{
   display: inline; /*Horz_menu / block Vert_menu*/
-  background: yellow;
+  background: #020220;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -19,7 +20,12 @@
   padding: 0em 1.0em;
   color: #464a4c;
   background-color: #fff;
-  text-align: center;
+  text-align: center;  
+}
+.nav-a{
+  color:black;
+  font: 2em;
+  padding: 0.5rem 1rem; 
 }
 .main-img{
   position: absolute;
@@ -28,4 +34,18 @@
   max-height: 362px;
   width: 400;
   z-index: 3;
+}
+.section {
+  padding: 2rem 2rem;
+  text-align: left;
+}
+.head-values {
+  background-image: url('../images/bg-masthead.jpg');
+  background-size: 100% 300px;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.cont-values {
+  color: #black;
+  padding: 1rem 4rem;
 }
