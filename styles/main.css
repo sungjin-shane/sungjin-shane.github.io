@@ -2,6 +2,7 @@
   border: 1px solid none !important;
 }
 
+/* Navigation menu------------------------------------ */
 .navbar {
   position: relative;
   display: flex;
@@ -19,33 +20,86 @@
   display: inline; /*Horz_menu / block Vert_menu*/
   padding: 0em 1.0em;
   color: #464a4c;
-  background-color: #fff;
+  background-color: #020220;
   text-align: center;  
 }
 .nav-a{
-  color:black;
+  color:white;
   font: 2em;
   padding: 0.5rem 1rem; 
 }
-.main-img{
-  position: absolute;
-  top: 7rem;
-  right: 3rem;
-  max-height: 362px;
-  width: 400;
-  z-index: 3;
-}
+
+/* Expressing large area-----------------------------*/
 .section {
-  padding: 2rem 2rem;
+  padding: 5rem 2rem;
   text-align: left;
 }
+
+/* Expressing attributes for section in index page---*/
+/* Top Section in index page-------------------------*/
 .head-values {
-  background-image: url('../images/bg-masthead.jpg');
-  background-size: 100% 300px;
+  background-image: url('../images/background1.jpg');
+  background-size: 100% 100%;
   color: #fff;
   padding-bottom: 1rem;
 }
+/* Main contents in index page-----------------------*/
 .cont-values {
   color: #black;
   padding: 1rem 4rem;
 }
+/* help information below the main contents----------*/
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+/*Font attributes for Top ----------------------------*/
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #181717;
+  font-weight: 600;
+}
+/*Font attributes for head on main contents-----------*/
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/*------------------------------------------------------/
+/*Blog page setting-----------------------------------*/
+
+/* reflection blog top---------------------------------*/
+.categories-ref {
+  background-image: url('../images/bg-masthead.jpg');
+  background-size: 100% 100%;
+  color: white;
+}
+
+/* blog contents frame-------------------------------*/ 
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960;
+  margin: 1.5rem auto;
+  padding: 0 auto;
+  box-sizing: border-box; 
+}
+.blog-section {
+  border-top: 1px solid #eee;
+  padding: 1rem 1rem;
+  margin-bottom: 0;
+}
+.blog-header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+ }
+ .blog-subtitle {
+  font-size: 1.8rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+ }
