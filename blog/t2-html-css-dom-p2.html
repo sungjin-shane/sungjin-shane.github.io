@@ -1,92 +1,118 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
   <head>
-    <meta charset='UTF-8'/>
-    <title>Shane's t2-html-css-dom-p2 blog </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" SRC="//normalize-css.googlecode.com/svn/trunk/normalize.css">
-    <link rel="stylesheet" href="../styles/box-styles.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <title>Shane's story of web developer</title>
+    <meta charset="UTF-8">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css"
   </head>
-  <body>
-    <div class="row">
-        <div class="col-8">
-            <h1>2ND Technical blog about reflection of Udacity</h1>
-        </div>
-        <div class="col-4">
-            <a style="margin:20px 20px" class="btn btn-primary btn-lg" href="../index.html" role="button"> Return Home</a>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col-6">
-            <h2>1.What is grid based design?</h2>
-            <p>Nowadays, grid-based design or layouts have become very popular in web design.   
-               <br>A grid is a series of intersecting horizontal and vertical lines that serve as guides to place elements in a design.
-                   To put it in simple words, grids are a system for creating order among elements in a website. 
-                   Grid helps users to better understand the information as it is shown in a more structured and logical way. 
+ <body>
+  <nav class="navbar">    
+    <ul class="nav-ul">
+      <li class="nav-li"><a class="nav-a" href="../index.html">Shane's Home</a></li>
+      <li class="nav-li"><a class="nav-a" href="#">About</a></li>
+      <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
+      <li class="nav-li"><a class="nav-a" href="#">Cultural Blog</a></li>
+      <li class="nav-li"><a class="nav-a" href="#">Technical Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="section categories-ref" style="background-image: url('../images/background4.jpg')">
+        <div class="row">
+          <div class="one-half column value">
+            <h2 class="value-multiplier">Technical Blog</h2>  
+            <h3 class="value-heading">HTML, CSS and the DOM-2</h3>  
+            <h5 class="value-description">Posted on 23rd March 2018</h5>          
+          </div>    
+        </div>
+  </div>
+  <div class="container">
+    <div class="blog-section">
+        <h1 class="blog-header">How can design web pages?</h1>
+        <p>
+           There are a variety of skills and theory to design web pages. Now we learn the basic method.
+        </p>
+    </div>
+    <div class="blog-section">
+        <h2 class="blog-subtitle">1.What is grid based design?</h2>
+            <p>
+                Nowadays, grid-based design or layouts have become very popular in web design.   
+                A grid is a series of intersecting horizontal and vertical lines that serve as guides to place elements in a design.
+                To put it in simple words, grids are a system for creating order among elements in a website. 
+                Grid helps users to better understand the information as it is shown in a more structured and logical way. 
             </p>
-            <img src="../img/grid-style-design0.jpg" alt="boxes images" whidth="300" height="150">
-            <img src="../img/grid-style-design2.jpg" alt="boxes images" whidth="300" height="150">
-            <img src="../img/grid-style-design3.jpg" alt="boxes images" whidth="300" height="150">
-        </div>
-        <div class="col-6">
             <div class="row">
-                <div class="col-6">
-                        <h2>2.Whats all the hype about responsive webpages?</h2>
-                        <p>There are a variety of devices, and screen size of the devices are diffrent.   
-                           <br>Responsive webpages makes your web page look good on all devices such as laptap, desktop, and mobile phones.
-                               Screen sizes are always changing, so it is important that webpages can adapt to any screen size.
-                               Responsive webpage responds to the needs of the users and the devices they are using.
-                        </p>
+                <div class="one-third column category">
+                    <img class="u-max-full-width" src="../images/grid-style-design0.jpg">
                 </div>
-                <div class-"col-6">
-                    <div class="row">
-                            <img src="../img/responsible-web.jpg" alt="boxes images" whidth="300" height="150">
-                    </div>     
-                    <div class="row">
-                            <img style="padding-left:50px" src="../img/responsible-web2.jpg" alt="boxes images" whidth="300" height="150">
-                    </div>                   
+                <div class="one-third column category">
+                    <img class="u-max-full-width" src="../images/grid-style-design2.jpg">
                 </div>
+                <div class="one-third column category">
+                    <img class="u-max-full-width" src="../images/grid-style-design3.jpg">
+                </div>
+            </div>
+    </div>
+    <div class="blog-section">
+        <h2 class="blog-subtitle">2.Whats all the hype about responsive webpages?</h2>
+        <p>
+            There are a variety of devices, and screen size of the devices are diffrent.   
+            Responsive webpages makes your web page look good on all devices such as laptap, desktop, and mobile phones.
+            Screen sizes are always changing, so it is important that webpages can adapt to any screen size.
+            Responsive webpage responds to the needs of the users and the devices they are using.
+        </p>
+            <div class="row">
+                <div class="one-half column category">
+                    <img class="u-max-full-width" src="../images/responsible-web.jpg">
+                </div>
+                <div class="one-half column category">
+                    <img class="u-max-full-width" src="../images/responsible-web2.jpg">
+                </div>
+            </div>
+    </div>
+
+    <div class="blog-section">
+        <h2 class="blog-subtitle">3. What is semantic structure?</h2>
+        <p>
+            All html tags have a meaning that can be not only understood by browser, but also make sense to all developers.    
+            Semantic structure generate clear codes which are going to organizing more specific pieces of information.
+            Also, it should be explained that all about meaningful groups of tags have structured order. 
+        </p>
+        <div class="row">
+            <div class="one-half column category">
+                <img class="u-max-full-width" src="../images/semantic1.png">
+            </div>
+            <div class="one-half column category">
+                <img class="u-max-full-width" src="../images/semantic2.png">
             </div>
         </div>
     </div>
-  
-    <div class="row">
-            <div class="col-5">
-                <h2 style="font-family: 'Faster One', cursive; color:red;">3. What is semantic structure?</h2>
-                <p>All html tags have a meaning that can be not only understood by browser, but also make sense to all developers.    
-                   <br>Semantic structure generate clear codes which are going to organizing more specific pieces of information.
-                       Also, it should be explained that all about meaningful groups of tags have structured order. 
-                </p>
-                <img style="padding-left:70px" src="../img/semantic1.png" alt="boxes images" whidth="300" height="150">
-                <img src="../img/semantic2.png" alt="boxes images" whidth="300" height="150">
-            </div>
-            <div class="col-7">
-                <div class="row">
-                    <div class="col-7">
-                            <h2>4.Any other points you found interesting and want to reflect on.</h2>
-                    </div> 
-                    <div class="col-5">       
-                            <img src="../img/inline-vs-block-boxes.png" alt="boxes images" whidth="300" height="150">        
-                    </div>
-                </div>
-
-                <div class="row">
-                    <ul>
-                        This shows us a couple of very important behaviors associated with block and inline boxes:
-                        <li>Block boxes always appear below the previous block element. This is the “natural” or “static” flow of an HTML document when it gets rendered by a web browser.</li>
-                        <li>The width of block boxes is set automatically <strong>based on the width of its parent container.</strong><br>In this case, our blocks are always the width of the browser window.
-                        <li>The default height of block boxes is <strong>based on the content it contains.</strong> When you narrow the browser window, the 
-                            <code>&lt;h1&gt;</code> gets split over two lines, and its height adjusts accordingly.</li>
-                        <li>Inline boxes don’t affect vertical spacing. They’re not for determining layout—they’re for styling stuff inside of a block.</li>
-                        <li>The width of inline boxes is based on the content it contains, not the width of the parent element.</li>
-                    </ul>
-                </div>
-                   
-            </div>
+    <div class="blog-section">
+            <h2 class="blog-subtitle">4.Any other points you found interesting and want to reflect on.</h2>
+            <img src="../images/inline-vs-block-boxes.png" alt="boxes images" whidth="400" height="250">   
+            <ul>
+                This shows us a couple of very important behaviors associated with block and inline boxes:
+                <li>Block boxes always appear below the previous block element. This is the “natural” or “static” flow of an HTML document when it gets rendered by a web browser.</li>
+                <li>The width of block boxes is set automatically <strong>based on the width of its parent container.</strong><br>In this case, our blocks are always the width of the browser window.
+                <li>The default height of block boxes is <strong>based on the content it contains.</strong> When you narrow the browser window, the 
+                <code>&lt;h1&gt;</code> gets split over two lines, and its height adjusts accordingly.</li>
+                <li>Inline boxes don’t affect vertical spacing. They’re not for determining layout—they’re for styling stuff inside of a block.</li>
+                <li>The width of inline boxes is based on the content it contains, not the width of the parent element.</li>
+            </ul>
         </div>
-
+  </div>
 
   </body>
 </html>
