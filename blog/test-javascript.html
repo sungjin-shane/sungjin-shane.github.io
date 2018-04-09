@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Testing javascript codes
+        </title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <SCRIPT LANGUAGE="JAVASCRIPT">
+            alert("This is test webpage about diffrence of accessing between Arrays and Objects");
+
+             //Test Arrays /////////////////////////////////////////////////////////
+             document.write("<br>//////////////////// Accessing data in arrays using index ///////////////////<br>")
+
+            arrayCars = new Array();
+            arrayFlowers = [];
+            arrayNumbers = new Array();
+
+            arrayCars.push("Totyota");
+            arrayCars.push("Honda")
+            arrayFlowers.push("Sunflower");
+            arrayFlowers.push("Rose","Tulips");
+            //document.write("arrayCars.length:"+arrayCars.length+"<br>");
+            //document.write("  arrayFlowers.length:"+arrayFlowers.length+"<br>");    
+
+            for (var i=0; i < 10; i++){
+                arrayNumbers[i] = i+1;
+                document.write("pushed data "+i+" into the arrayNumbers address[" + i + "] <br>");
+                document.write("Element ["+i+"] = "+arrayNumbers[i]+"<br>");           
+            }
+            document.write("=====================================<br>");
+            document.write("arrayNumbers.length:"+arrayNumbers.length+"<br>");
+
+            //Test Objects/////////////////////////////////////////////////////////
+            document.write("<br>//////////////////// Accessing data in objects using properties///////////////////<br>")
+            var myCarsObject = {
+                brand:"Toyota",
+                name:"Corollar",
+                year:2017 
+            };
+            document.write( myCarsObject.brand +","+ myCarsObject.name+","+ myCarsObject.year + "<br>");
+
+            function myLaptopFunction (brand, name, year){
+                this.brand = brand;
+                this.name = name;
+                this.year = year
+            }
+            
+            var laptop1 = new myLaptopFunction( 'SAMSUNG', 'S750', 2018);
+            var laptop2 = new myLaptopFunction( 'LG', 'X150', 2018);
+            document.write( laptop1.brand +","+ laptop1.year +","+ laptop1.year +"<br>" );
+            document.write( laptop2.brand +","+ laptop1.year +","+ laptop1.year +"<br>" );
+            
+        </SCRIPT>        
+    </body>
+<!--
+    Javascript는 Object생성하는 방법이 대표적으로 2가지가 있습니다.
+
+
+
+function으로 객채생성,오브잭트선언 두가지 방식이 존제합니다.
+
+
+
+1. function으로 객체 생성
+
+function Car( name , createYear ){
+
+this.name = name;
+
+this.createYear = createYear;
+
+}
+
+
+
+var c1 = new Car( '소나타',2015);
+
+var c2 = new Car( '그랜저',2016);
+
+document.write( c1.name +","+ c1.createYear ); //소나타,2015 출력
+
+document.write( c2.name +","+ c2.createYear ); //그랜저,2016 출력
+
+
+
+2. 변수 Object 선언
+
+var car1 = {
+
+name:"소나타"
+
+,createYear:"2015"
+
+};
+
+
+
+var car2 = {
+
+name:"그랜저"
+
+,createYear:"2016"
+
+};
+
+document.write( car1.name +","+ car1.createYear ); //소나타,2015 출력
+
+document.write( car2 .name +","+ car2 .createYear ); //그랜저,2016 출력
+
+
+
+위 결과는 같으나 사용하는 방법이나 처리로직 이 다릅니다.
+
+2가지 방식에 상당히 다른 점이 존제 합니다.
+
+1번방식은 java에 class와 유사하여 new로 새로은 객체를 만들어 데이터 자료형을 전달하는 것이 쉬워집니다.
+
+2번방식은 변수 자체에 Obejct를 부여하는 방법으로 new로 상성하는 것과 달리 
+
+값을 변경하면 그 값이 변경이 됩니다.
+
+아래와 같이 로직을 수정해보면 바로 이해가 가능합니다.
+
+
+
+var car1 = {
+
+name:""
+
+,createYear:""
+
+};
+
+
+
+car1.name = "소나타";
+
+car1.createYear = 2015;
+
+document.write( car1.name +","+ car1.createYear ); //소나타,2015 출력
+
+
+
+car1.name = "그랜저";
+
+car1.createYear = 2016;
+
+document.write( car1.name +","+ car1.createYear ); //그랜저,2016 출력
+
+
+
+이와 같은 내용을 javascript에서 응용하여 JQuery같은 라이블러리를 만들수 있겠지요 
+
+간단한 예제를 만들어 보겠습니다.
+
+
+
+function Car( name ){
+
+this.name = name;
+
+}
+
+
+
+var Saler = {
+
+cars:[]
+
+};
+
+
+
+Saler.setCar = function( car ){
+
+this.cars.push( car );
+
+};
+
+Saler.writeCar = function( car ){
+
+var tmp = "";
+
+for( var i=0; i<this.cars.length ; i++ ){
+
+tmp += "<br/>"+this.cars[i].name;
+
+}
+
+document.write( tmp );
+
+};
+
+
+Saler.setCar( new Car('소나타') );
+
+Saler.setCar( new Car('그랜저') );
+
+Saler.setCar( new Car('티코') );
+
+
+
+Saler.writeCar();
+
+//출력결과
+
+소나타 
+
+그랜저
+
+티코
+
+[출처] Javascript Object 생성하는 방법|작성자 gooddesire
+
+
+-->
+</html>
+
