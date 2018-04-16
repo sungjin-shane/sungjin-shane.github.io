@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shane's story of web developer</title>
+    <meta charset="UTF-8">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css"
+  </head>
+  
+  <body>
+        <nav class="navbar">    
+        <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="../index.html">Shane's Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">About</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Cultural Blog</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Technical Blog</a></li>
+        </ul>
+        </nav>
+
+        <div class="section categories-ref" style="background-image: url('../images/background16.jpg')">
+            <div class="row">
+                <div class="one-half column value">
+                <h2 class="value-multiplier">Technical Blog</h2>  
+                <h3 class="value-heading">Probelm-Solving</h3>  
+                <h5 class="value-description">Posted on 9th April 2018</h5>          
+                </div>    
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="blog-section">
+            <h2 class="blog-header"> Learning javascript basic grammar</h2>
+            <p>
+                <strong>
+                <em>"I studied javascript 17 years ago in my first web based IT project by myself"</em>
+                </strong> Its grammar had not large differences with coventional C-language and it was easier to understand than C , so I was able to learn quickly.
+                However, when I left the project, my role was changed to back-end programmer based on SQL quite a long time, thus I forgot many of skills in javascripts.  
+                From this sprint-4, I was able to remind the javascript basic grammar, and I could organise its difficulties in particular codes.
+            </p>
+            </div>
+
+            <div class="blog-section">
+                    <h2 class="blog-subtitle">How does JavaScript compare to HTML and CSS?</h2>
+                    <div class="row">
+                        <div class="one-half column category">
+                        <img class="u-max-full-width" src="../images/javascript.jpg">
+                        </div>
+                        <div class="one-half column category">
+                        <p>
+                            As I said earlier in sprint-0, the Javascript can generate action and flow for the both html and CSS.
+                            It is able to express various codes which can control data. and it is used to define the interactive elements of a webpage that help to engage users.
+                            <br>I think JavaScript is a more advanced language to develop web pages dynamic. In comparison with the Javascript HTML is static language.
+                            It means the html code is displayed on the browser, and it is unable to change or interact with another user's action otinput.   
+                            <strong>The javascripit has a role in web programming that it breaths life into the both HTML and CSS.   </strong>                  
+                        </p> 
+                        </div>
+                    </div>    
+            </div>
+            <hr>
+            <div clasbes="blog-section">
+                <h2 class="blog-subtitle">Explain control flow and loops using an example process from everyday life, for example 'waking up' or 'brushing your teeth'</h2>
+                <div class="row">
+                    <div class="one-half column category">
+                        <img style="max-width:100%" src="../images/looping-daily.png">
+                    </div>
+                    <div class="one-half column category">
+                        <p style="font-size:15px; color:blue;"> This is designed by just conceptual codes. Although it is unable to apply real source codes into the actual system,
+                            I was able to find making a process that could be controled by logic. </p>
+
+                        <p>
+                            I used both FOR loop and SWITCH syntax to control my daily life. There was a few syntax errors because I did not make actual function.
+                            However you are able to understand how can it works. The two nested FOR loop generates 24hours and 60min life flow.
+                            Also, the SWITCH CASE syntax makes trigger action which I should do on time.
+                            If you want to make conditions, we can use IF clause. In my case, I used IF clause to make HH:MM system.
+                        </p> 
+                    </div>
+                </div>    
+            </div>
+            <hr>
+            <div clasbes="blog-section">
+                <h2 class="blog-subtitle">Explain the difference between accessing data from arrays and objects.</h2>
+                <p style="font-size:15px; color:blue;"> To access an values in arrays, we can use its index/address number, whereas in the objects, we can use its properties </p>
+                <div class = "row">
+                    <div class="one-half column category">
+                        <p>
+                            <strong style="font-size:20px;">[arrays]</strong> When we use the Array to save data we are able to access the data by value of addrees in Arrays
+                            <hr>
+                            <br>&nbsp; &nbsp;for (var i=0; i < 10; i++) {
+                            <br>&nbsp; &nbsp;    arrayNumbers[i] = i+1;
+                            <br>&nbsp; &nbsp;    document.write("Element ["+i+"] = "+ <strong style="color:red;">arrayNumbers[i]</strong>);           
+                            <br>&nbsp; &nbsp;} <br>                  
+                        </p>                       
+                    </div>
+                    <div class="one-half column category">
+                        <p>
+                            <strong style="font-size:20px;">[objects]</strong> To access an object, we can refer to its properties name. From the following examlple
+                            you can easily understand it.
+                            <hr>
+                            <br>&nbsp; &nbsp;var myCars = {
+                            <br>&nbsp; &nbsp;    name:"Corollar",
+                            <br>&nbsp; &nbsp;    year:2017 
+                            <br>&nbsp; &nbsp; };        
+                            <br>&nbsp; &nbsp; document.write( <strong style="color:red;">myCars.name</strong> +","+ myCars.year );
+                        </p>     
+                    </div>
+                </div>
+                <p>
+                    If you click below button you can find a good example about storing and accessing the data in arrays and objects.
+                </p>
+                 <a class="button button-primary" href="test-javascript.html" target="_blank">Accessing data both Arrays and Objects</a>              
+            </div>
+            <hr>
+
+            <div clasbes="blog-section">
+                <h2 class="blog-subtitle">Explain what functions are and why they are useful.</h2>
+                <p style="font-size:15px; color:blue;"> I think the fuction is a magic box which is operated independentely and it can be reusable.</p>
+                <p>
+                   When we use the fuction, we are able to make clear codes and reduce the same source codes which has the same purpose.
+                   The function is designed to operate independentely, thus, developers are able to call the fucntions in sources codes where 
+                   the function is needed. <br>
+                   If we make a e-Commerce web site there will be web pages which need login-process. In this cases, can you imagine to make
+                   the same source codes for login process in each web pages<br>
+                   It will be really inefficient and leads to negative side effect. This is beacise that if we have to modify the login process 
+                   we must update every web pages that have login process. However, if we make login process by function we can easily call the function
+                   in the every web pages which are required the login process.                     
+                </p>    
+            </div>
+
+        </div>
+  
+</body>
+
+</html>
