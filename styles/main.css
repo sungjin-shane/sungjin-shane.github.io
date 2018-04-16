@@ -102,3 +102,15 @@
   letter-spacing: .2rem;
   font-weight: 600;
  }
+ .bg-full {
+  background: url('../images/background11.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg-tmp {
+  box-sizing: border-box;
+  background-size: auto;
+  margin-right: 1em;
+ }

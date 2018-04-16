@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shane's story of web developer</title>
+    <meta charset="UTF-8">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Javascript
+        <script type="text/javascript">..</script>
+        <script src="classes.js"></script>
+        –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+       
+  </head>
+  
+  <body>
+        <nav class="navbar">    
+        <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="../index.html">Shane's Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">About</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Cultural Blog</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Technical Blog</a></li>
+        </ul>
+        </nav>
+
+        <div class="section categories-ref" style="background-image: url('../images/background13.jpg');">
+            <div class="row">
+                <div class="one-half column value">
+                <h2 class="value-multiplier">TECHNICAL TEMPLATES</h2>  
+                <h3 class="value-heading" style = "color:black">Just write everything before you forget it</h3>  
+                </div>  
+               
+                <div class="one-half column value">
+                    <img class="bg-tmp" src="../images/javascript.png">
+                    <img class="bg-tmp" style="margin-left: 2.5em" src="../images/background14.jpg">
+                </div> 
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="blog-section">
+                <h2 class="blog-header"> JavaScript events and CSS classes</h2>
+                
+                <p>
+                    <a href="https://github.com/dev-academy-programme/curriculum/blob/master/resources/js-events-and-css-classes-ARTICLE/README.md" target="_blank">
+                        <h3 class="value-heading" style = "color:red">You must know this!!</h3> 
+                    </a>
+                </p>                
+            </div>
+            <!-- javascript test source you can see outputs using developent tool-->
+            <div id="wombat" style="color:red">Some test-text. If you turn on the development mode F12, you gain a lot of sources.</div>           
+            <script>
+              var womba1 = document.getElementById('wombat')
+              console.log(wombat.outerHTML)
+            </script>
+
+            <div id="wombat2">Some details this objects.</div>
+            <script>
+            console.dir(document.getElementById('wombat2'))
+            </script>
+
+            <div class="aardvark">One aardvark.</div>
+            <div class="aardvark">Another aardvark.</div>
+            <script>
+            var aardvarks = document.getElementsByClassName('aardvark')
+            console.log(aardvarks)
+            </script>
+
+            <div class="wombat">A wombat. Click me! I will turn red.</div>
+            <div class="wombat">A wombat. Click me! I will turn blue.</div>
+            <script>
+            var wombats = document.getElementsByClassName('wombat')
+            console.log(wombats)
+            var theFirstWombat = wombats[0]
+            var theFirstWombat1 = wombats[1]
+            theFirstWombat.addEventListener('click', function (evt) {
+                evt.target.style.backgroundColor = 'red'
+            })
+            theFirstWombat1.addEventListener('click', makeBlue)
+            function makeBlue (evt) {
+                evt.target.style.backgroundColor = 'blue'
+            }
+            </script>
+
+            <div class="aardvarks">One aardvark. Double-click me</div>
+            <div class="aardvarks">Another aardvark. Double-click me</div>
+            <div class="aardvarks">A third aardvark. Double-click me</div>
+            <script> 
+                var allTheAardvarks = document.getElementsByClassName('aardvarks')
+                console.log(allTheAardvarks)
+                for (var i = 0; i < allTheAardvarks.length; i++) {
+                allTheAardvarks[i].addEventListener('dblclick', makeBlue)
+                }
+
+                function makeBlue (evt) {
+                evt.target.style.backgroundColor = 'blue'
+                }
+            </script>
+           
+           <div id="wombat3">Still just a wombat.</div>
+            <script>
+                var wombat = document.getElementById('wombat3')
+                showInfo(wombat)
+
+                function showInfo (element) {
+                console.log(
+                    'This element has id: ' + element.id +
+                    ' and has the contents: ' + element.innerHTML
+                    )
+                }
+            </script>
+
+            <div class="wombat">Just another wombat.</div>
+                <script>
+                var wombats = document.getElementsByClassName('wombat')
+                wombats[0].classList.add('marsupial')
+                console.log('wombat class-->'+wombats.length)
+                for(var i =0; i < wombats.length; i++){
+                    console.log(wombats[i])
+                } 
+            </script>
+            <div class="aardvark">An aardvark. Double click!! I will be invisible</div>
+            <div class="aardvark">Yet Another Aardvark. Double click!! I will be invisible</div>
+            <div class="recover"> If you click I will remove invisible attributes</div>
+            <style>
+                .invisible {
+                display: none;
+                }
+            </style>
+            <script>
+
+                for (var i = 0; i < aardvarks.length; i++) {
+                    aardvarks[i].addEventListener('dblclick', makeInvisible)
+                }
+                recover.addEventListener('click', removeClass)
+
+                function makeInvisible (evt) {
+                   evt.target.classList.add('invisible')
+                }
+               /* var aardvarks = document.getElementsByClassName('aardvark')
+                for (var i = 0; i < aardvarks.length; i++) {
+                aardvarks[i].classList.add('invisible')
+                }*/
+
+               function removeClass () {
+                for (var i = 0; i < aardvarks.length; i++) {
+                    aardvarks[i].classList.remove('invisible')
+                 }      
+               }
+            </script>
+
+            <!-- javascript test source end  -->
+
+            <br>
+
+            <div class="blog-section">
+            <h2 class="blog-header"> Eventhandling basic logic in Javascript</h2>
+                <div class="row">
+                    <div class="one-half column category">
+                        <p>
+                            <img style="max-width:100%" src="../images/sample1.png">    
+                        </p>
+                    </div>
+                    <div class="one-half column category">
+                        <h5 class="value-description" style = "color:green">addEventListener ('When activate it', 'How reaction it ')</h5>
+                        <hr>
+                        <p>
+                            document.<strong style="color:green">addEventListener</strong>('DOMContentLoaded', <strong style="color:red">start </strong> ) <br><br>
+            
+                            function <strong style="color:red">start</strong>() { <br>
+                                <strong style="color:blue">one</strong>()    <br>                  
+                            }<br><br>
+            
+                            function <strong style="color:blue"> one </strong> () { <br>
+                                // First, we have to find the element:<br>
+                                var one = document.getElementById('one')<br><br>
+                            
+                                // Next, we add an event listener to it:<br>
+                                one.<strong style="color:green">addEventListener</strong>('mouseenter', <strong style="color:orange">makeBlue </strong>)<br><br>
+                            
+                                // Finally, we add one to make the colour white again<br>
+                                one.<strong style="color:green">addEventListener</strong>('mouseleave', <strong style="color:orange">makeWhite</strong>)<br>
+                            }<br><br>
+
+                            function change-one () {<br>
+                                // First, we have to find the element:<br>
+                                var one = document.getElementById('one')<br><br>
+                              
+                                // Next, we apply a new CSS class to it:<br>
+                                one.classList.add('blue') <br>
+                              }
+            
+                            // Changes the background color of event's target<br>
+                            function <strong style="color:orange">makeBlue </strong> ( <strong>evt</strong>) {<br>
+                            <strong>evt</strong>.target.style.backgroundColor = 'blue'<br>
+                            }<br><br>
+                            function <strong style="color:orange">makeWhite </strong> ( <strong>evt</strong>) {<br>
+                            <strong>evt</strong>.target.style.backgroundColor = 'white'<br>
+                            }<br>
+                        </p>
+                    </div>
+                </div>           
+            </div>
+
+            <div class="blog-section">
+                <h2 class="blog-header"> ALTERING DOM OBJECT</h2>
+                    <div class="row">
+                        <div class="one-half column category">
+                            <p>
+                                <img style="max-width:100%" src="../images/sample2.png">    
+                            </p>
+                        </div>
+                        <div class="one-half column category">
+                            <h5 class="value-description" style = "color:green">getElementsByClassName ('className')</h5>
+                            <hr>
+                            <p>
+                                <img style="max-width:100%" src="../images/sample2-js.png">    
+                            </p>
+                        </div>
+                    </div>           
+            </div>
+                  
+           
+
+        </div>
+  
+</body>
+
+</html>
