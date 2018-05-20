@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shane's story of web developer</title>
+    <meta charset="UTF-8">
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="../styles/main.css"
+  </head>
+  
+  <body>
+        <nav class="navbar">    
+        <ul class="nav-ul">
+            <li class="nav-li"><a class="nav-a" href="../index.html">Shane's Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">About</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Cultural Blog</a></li>
+            <li class="nav-li"><a class="nav-a" href="#">Technical Blog</a></li>
+        </ul>
+        </nav>
+
+        <div class="section categories-ref" style="background-image: url('../images/background20.jpg')">
+            <div class="row">
+                <div class="one-half column value">
+                <h2 class="value-multiplier">Technical Blog</h2>  
+                <h3 class="value-heading">Scope in programming</h3>  
+                <h5 class="value-description">Posted on 5th May 2018</h5>          
+                </div>    
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="blog-section">
+            <h2 class="blog-header"> Scope</h2>
+                <p>
+                    <strong>
+                        All variables have the scope, so when we use the scope we can handle values in variables appropriately. 
+                    </strong><br>
+                        Unless the codes are scoped by particular rules, it is very difficult to use the variables. It means coders have to manage all variables.
+                        Can you imagine you should control varialbles in long codes, and you should not forget to initialize all the variables. <br>
+                        However, the scope make variables life cycle auctomatically, so coders do not have to bother managing all variables.
+                        Coders can easily handle all variables to apply suitable scope rule on their codes.<br>  
+                
+                    <br>    Baisically, there are two types of scope in javascript. <br>
+                </p>
+                <p>    
+                    <strong>Global Scope</strong> <br>
+                    The global scope is accessible anywhere in your JavaScript code. If we begin writing code in JavaScript, 
+                    we are already in the global scope. When you want to make varialbes which has whole life cycle in our source codes You can use the Glocal scope.<br>
+                </p>
+                <p>
+                    <strong>Local Scope</strong> <br>
+                    Local scope is more complex. Locally scoped variables are only visible and accessible within their local scopes 
+                    where they are defined. We can think of local scope as any new scope that you create within the global scope.
+                    Codes are unable to access the values of variables if they try to use the variables in our of the scope. 
+                    Simply, these locally scoped variables can only be accessed within the function that they are defined.
+
+                </p>       
+                
+                <p>
+                    <code>                  
+                        var preVal = '';    //Global variables which can use all area in this source file. <br>
+                        var currValarr = []; <br><br>
+
+                        function evtClick(evt) {<br>
+                            let className = evt.target.className;   //Local variables which can use within fuction evtClick();<br>
+                            let newVal = evt.target.id;  <br><br>
+
+                            preVal = className;<br><br>
+
+                        }<br><br>
+
+                        preVal = newVal;   // The newVal is unable to use here (out of scope)<br>
+                        ...<br>
+
+
+                    </code>
+                </p>
+            </div>
+           
+        </div>
+  
+</body>
+
+</html>
