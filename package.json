@@ -1,0 +1,9 @@
+{
+  "name": "Shane-Website",
+  "version": "1.0.0",
+  "description": "Shane's profile and blogs",
+  "main": "index.html",
+  "repository": "https://github.com/sungjin-shane/sungjin-shane.github.io.git",
+  "author": "Shane",
+  "license": "MIT"
+}
