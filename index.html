@@ -1,250 +1,407 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Shane's story of web developer</title>
-    <meta charset="UTF-8">
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="assets/img/icon3.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Awesome Landing Page by Creative Tim</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
 
-    <!-- FONT
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/landing-page.css" rel="stylesheet"/>
 
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  
-  <body>
-  <nav class="navbar">    
-    <ul class="nav-ul">
-      <li class="nav-li"><a class="nav-a" href="index.html">Shane's Home</a></li>
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+        <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
-      <div class="dropdown">
-        <button class="dropbtn">Cultural Blog</button>
-        <div class="dropdown-content">
-          <a href="blog/c1-reflection-blog.html">Blog1-Shereef</a>
-          <a href="blog/c1-time-and-habits-blog.html">Blog2-Emotion</a>
-          <a href="blog/c2-emotional-intellegence.html">Blog2-TIME</a>
-          <a href="blog/c3-meditation-process.html">Blog3-Meditation</a>
-          <a href="bblog/c4-daily-mindfulness.htm">Blog4-Mindfullness</a>
-          <a href="blog/c5-self-confidence.html">Blog5-Confidence</a>
-          <a href="blog/c6-control.html">Blog6-Control</a>
-          <a href="blog/c7-motivation.html">Blog7-Motivation</a>
-          <a href="blog/c8-connecting.html">Blog8-Connecting</a>
-          <a href="blog/c9-leadership.html">Blog9-Leadership</a>
-        </div>
-      </div> 
-      <div class="dropdown">
-          <button class="dropbtn">Technical Blog</button>
-          <div class="dropdown-content">
-              <a href="blog/t2-html-css-dom-p1.html">T1.HTML&CSS&DOML</a>
-              <a href="blog/t2-html-css-dom-p2.html">T2-Html&Udaciity</a>
-              <a href="blog/t3-design-to-web-blog.htm">T3-Framework</a>
-              <a href="blog/t4-javascript-basic.html">T4-Javascript basic</a>
-              <a href="blog/t5-problem-solving.html">T5-Problem&Solving</a>
-              <a href="blog/t6-js-language.html">T6-Minesweeper</a>   
-              <a href="blog/t6-scope.html">T8-Scope</a>         
-              <a href="#">Blog8-Ready</a>
-              <a href="#">Blog9-Ready</a>
-          </div>
-      </div> 
-      <li class="nav-li"><a class="nav-a" href="#">             </a></li>
-      <li class="nav-li"><a class="nav-a" href="#">About</a></li>
-      <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
-      <li class="nav-li"><a class="nav-a" href="blog/everything-counts.html">Everything Counts</a></li>
-      <div class="dropdown">
-          <button class="dropbtn">Technical samples</button>
-          <div class="dropdown-content">
-              <a href="blog/technical-templates.html">Javascrip tips</a>
-              <a href="personal-project/project.html">Personal art</a>             
-          </div>
-      </div> 
-      <li class="nav-li"><a class="nav-a" href="blog/technical-templates.html">Technical samples</a></li>
-    </ul>
-  </nav>
+    </head>
+    <body class="landing-page landing-page1">
+        <nav class="navbar navbar-transparent navbar-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
+                    </button>
+                    <a href="http://www.creative-tim.com">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/img/shane.png" alt="Shane Park">
+                            </div>
+                            <div class="brand">
+                            Enthusiasm for IT
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="example" >
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                            <!-- <i class="fa fa-facebook-square"></i> -->
+                            My Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog-home.html" target="_blank">
+                            <!-- <i class="fa fa-twitter"></i> -->
+                            Story of Develoepr
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/shane-park-51b2545a/"target="_blank">
+                            <!-- <i class="fa fa-pinterest"></i> -->
+                            Shane's Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="parallax filter-gradient blue" data-color="blue">
+                <div class="parallax-background">
+                    <img class="parallax-background-image" src="assets/img/template/bg3.jpg">
+                </div>
+                <div class= "container">
+                    <div class="row">
+                        <div class="col-md-5 hidden-xs">
+                            <div class="parallax-image">
+                                <img class="phone" src="assets/img/template/seekMentor4.png" style="margin-top: 20px"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-1">
+                            <div class="description">
+                                <h3>Having a passion for IT, Empathizing with colleagues, contributing to a team</h3>
+                                <br>
+                                <h5>If someone asks me "What were the most important things in the past IT career?"</h5>
+                                <h5>I can confidently say that the most significant values that always has been supported me were Passion for IT, Empathizing with others and Contributing to a Team. Also, this is the reason that I am still able to evolve as a wellbeing IT expert putting passion into a team!</h5>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn btn-fill btn-neutral">
+                                <i class="fa fa-apple"></i> Appstore
+                                </button>
+                                <button class="btn btn-simple btn-neutral">
+                                <i class="fa fa-android"></i>
+                                </button>
+                                <button class="btn btn-simple btn-neutral">
+                                <i class="fa fa-windows"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div class="section head-values">
-    <div class="row">
-      <div class="one-half column value">
-        <h1  class="value-multiplier">Shane's story of Web development</h1>        
-      </div>
-      <div class="row">
-        <div class="one-half column value">
-            <h2 class="value-multiplier">Everything Count</h2>
-            <h5 class="value-heading"><em>Explore how these practical story will help you make real change in your career of web developer</em></h5>         
-        </div>
-      </div>
-    </div>
-  </div>
+            <div class="section section-gray section-clients">
+                    <div class="container text-center">
+                    <h4 class="header-text">Core Competencies</h4>
+                    <div class="row">                   
+                            <div class="col-md-4">
+                                <div class="description">
+                                    <h4 class="text">Software Development</h4>
+                                    <p>
+                                        Seven+ years' experience with solid programming knowledge
+                                        based on hands on background using TDL Languages like C/C++. <br>
+                                        It includes at least four years’ Web programming experience using HTML,CSS,PHP,javascript.<br>
+                                        Recently, experienced modern web skills(Node.js,redact and reduct)<br>
+                                    </p>
+                                </div>
+                                <div class="logos">
+                                    <ul class="list-unstyled">
+                                        <li ><img src="assets/img/logos/react.png"/></i>
+                                        <li ><img src="assets/img/logos/html.png"/></li>
+                                        <li ><img src="assets/img/logos/node.png"/></li>
+                                        <li ><img src="assets/img/logos/phpjsp.png"/></li>
+                                        <li ><img src="assets/img/logos/cpp2.png"/></li>
+                                        <li ><img src="assets/img/logos/delphi.png"/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="description">
+                                    <h4 class="text">Database Design & SQL</h4>
+                                    <p>
+                                        Good understanding of relational database and strong database design knowledge
+                                        based on commercial experience in the system integration projects. <br>
+                                        Solid SQL skills including triggers, stored procedures using Pro*C, PL-SQL and 
+                                        SQL scripting on the Oracle DBMS and Mysql.
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="logos">
+                                    <ul class="list-unstyled">
+                                        <li ><img src="assets/img/logos/proc.png"/></li>
+                                        <li ><img src="assets/img/logos/plsql.png"/></li>
+                                        <li ><img src="assets/img/logos/oracle.png"/></i>
+                                        <li ><img src="assets/img/logos/mysql.png"/></li>
+                                        <li ><img src="assets/img/logos/dbms.png"/></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="description">
+                                    <h4 class="text">Bunsiness Process Analysis</h4>
+                                    <p>
+                                        Strong ability to elicit, and define, AS-IS Biz-process problems into clearly communicated requirements.
+                                        Creating TO-BE business process and functional requirements as required.
+                                        Solid experiences various biz process in ERP, SCM, MES, CRM, BPM,
+                                        PMS, ITSM based on process innovation.<br>
+                                    </p>
+                                </div>
+                                <div class="logos">
+                                    <ul class="list-unstyled">
+                                        <li ><img src="assets/img/logos/aris.png"/></li>
+                                        <li ><img src="assets/img/logos/analyst2.png"/></li>
+                                        <li ><img src="assets/img/logos/erp.png"/><img src="assets/img/logos/itsm.png"/></i>                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
 
-  <div class="section cont-values">
-      <div class="row">
-        <div class="one-half column value">
-          <h5 class="value-heading">CulturalBlog1-Shereef's Fireside Chat</h5>
-          <p class="value-description">
-            <em>
-              <strong>"Make together"</strong> is a totally different mindset<br>
-            </em>
-            as if people make food in the kitchen with their friends together.
-            I was thought from Sheereef's Chat that I did not order Bootcamp package.
-          </p>
-          <a class="button button-primary" href="blog/c1-reflection-blog.html">More Details</a>
-        </div>
-        <div class="one-half column value">
-          <h5 class="value-heading">CulturalBlog2-TIME&HABITS</h5>
-          <p class="value-description">
-            <em>"Wheter working with time on good habits or struggling against those" </em>
-            <br>In my case, I do not have enough times trying to learn phase-0 because I have to handle my regular working tasks during the day..
-          </p>
-          <a class="button button-primary" href="blog/c1-time-and-habits-blog.html">More Details</a>
-        </div>
-      </div>
-    </div>
-    <hr>
+            <!-- <div class="section section-features"> -->
+                    <div class="container">
+                        <h3 class="header-text text-center">Recent My Web Apps</h3>
+                    </div>
+            <!-- </div> -->
 
-    <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">TechBlog1-HTML&CSS&DOM</h5>
-            <p class="value-description">
-              <strong>HTML</strong> is structure of web page <br> <strong>CSS</strong> is a interior<br> According to the <Strong>DOM</Strong> (Document Object Model
-            </p>
-            <a class="button button-primary" href="blog/t2-html-css-dom-p1.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">TechBlog2-Html-Udaciity-Reflection</h5>
-            <p class="value-description">
-              "This is the most imortant basic as a web developer<br>
-              I could understand various framework to design web pages, and practiced useful CSS<br> such as ZEN and Bootstrap..
-            </p>
-            <a class="button button-primary" href="blog/t2-html-css-dom-p2.html">More Details</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog2-Emotion Control</h5>
-            <p class="value-description">
-                Nowadays, IT projects often fail due to poor team dynamics<br> rather than a lack of technical ability.
-                Software development today is a team effort.
-            </p>
-            <a class="button button-primary" href="blog/c2-emotional-intellegence.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">TecnicalBlog3-Using a advanced framework</h5>
-            <p class="value-description">I redesigned my web site" by useful tools and frameworks such as responsive web structure,Skeleton CSS, and wireframe design.</p>
-            <a class="button button-primary" href="blog/t3-design-to-web-blog.html">More Details</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog3-Meditation process</h5>
-            <p class="value-description">
-                Just acknowledge that something is happening. It is a solution, and if you tend to react and judge you should waste your energy.
-            </p>
-            <a class="button button-primary" href="blog/c3-meditation-process.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">TechnicalBlog4-Javascript basic</h5>
-            <p class="value-description">It was a great experience to remind the basic skills in Javascript. I learned it 17 years ago,
-                and I forgot something that particular rules like defining structures.</p>
-            <a class="button button-primary" href="blog/t4-javascript-basic.html">More Details</a>
-          </div>
-        </div>
-      </div>
-        <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog4-Daily-Mindfullness</h5>
-            <p class="value-description">A mindfulness meditator needs to do is extend the benefits of mindfulness beyond sitting into every part of life.</p>
-            <a class="button button-primary" href="blog/c4-daily-mindfulness.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog5-Self-Confidence</h5>
-            <p class="value-description">Knowing yourself is the most important because you can control your mind and gain a strong confidence.</p>
-            <a class="button button-primary" href="blog/c5-self-confidence.html">More Details</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">TechnicalBlog5-problem-solving</h5>
-            <p class="value-description">I believe that there is no almighty programmer who have no errors in program during making new programmes.</p>
-            <a class="button button-primary" href="blog/t5-problem-solving.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">TechnicalBlog6-Javascript-Minesweeper</h5>
-            <p class="value-description">In the JavaScript language, describe all the use cases for each of below symbol.</p>
-            <a class="button button-primary" href="blog/t6-js-language.html">More Details</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog6-Control</h5>
-            <p class="value-description"> I strongly believe that if we can stop it we already make the 70% of success in management of triggers.</p>
-            <a class="button button-primary" href="blog/c6-control.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog7-Motivation</h5>
-            <p class="value-description">Don't afraid of failure that is the building block of success.</p>
-            <a class="button button-primary" href="blog/c7-motivation.html">More Deatils</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">TechnicalBlog8-Scope</h5>
-            <p class="value-description"> Scope in codes is really...</p>
-            <a class="button button-primary" href="blog/t6-scope.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog8-Connecting</h5>
-            <p class="value-description">People thirst for others to understand their feelings.</p>
-            <a class="button button-primary" href="blog/c8-connecting.html">More Deatils</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section cont-values">
-        <div class="row">
-          <div class="one-half column value">
-            <h5 class="value-heading">TechnicalBlog8-Scope</h5>
-            <p class="value-description"> Scope in codes is really...</p>
-            <a class="button button-primary" href="blog/t6-scope.html">More Details</a>
-          </div>
-          <div class="one-half column value">
-            <h5 class="value-heading">CulturalBlog9-Leadership</h5>
-            <p class="value-description">Being effective and Loved at the same time.</p>
-            <a class="button button-primary" href="blog/c9-leadership.html">More Deatils</a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="section get-help">
-          <div class="container">
-            <h3 class="section-heading">Need help getting started?</h3>
-            <p class="section-description">DEV ACADEMY is an amazing place to start with Bootcamp programe. If you want to learn more, just visit the web site!</p>
-            <a class="button button-primary" href="https://devacademy.co.nz">DEV ACADEMY</a>
-          </div>
-      </div>
+            <div class="section section-presentation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="description">
+                                <h4 class="header-text">Seek Mentor</h4>
+                                <p> This is my first modern website using node.js with react framework on the Express Server.</p>
+                                <p> When I attended global exchange meet-up, all foreign members were struggled with finding English tutor.
+                                    "Where is my Englis tutor? and how can I find the mentor?" Also, There were a lot of voluntary mentors 
+                                    who want to exchange their ability in English So, I decided to make a good place for them. 
+                                </p>
+                                <p>
+                                    I focused on smart notification with sending SMS sms and email. I was able to make the fucntion using open source API interface. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 hidden-xs">
+                            <img src="assets/img/template/myapp1.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-demo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="description-carousel" class="carousel fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="assets/img/template/examples/react.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/template/examples/sms.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/template/examples/nodeemailer.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/template/examples/myapp1-3.png" alt="">
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators carousel-indicators-blue">
+                                    <li data-target="#description-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#description-carousel" data-slide-to="1" class=""></li>
+                                    <li data-target="#description-carousel" data-slide-to="2" class=""></li>
+                                    <li data-target="#description-carousel" data-slide-to="3" class=""></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1">
+                            <h4 class="header-text">Easy to seek</h4>
+                            <p>
+                                Make it easy for users to find their favourite mentors and mentees from the app. Be sure to let users know someone has interest in teaching you or learning from you!
+                            </p>
+                            <!-- <a href="http://www.creative-tim.com/product/awesome-landing-page" id="Demo3" class="btn btn-fill btn-info" data-button="info">Get Free Demo</a> -->
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Open Demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section section-features">
+                <div class="container">
+                    <h4 class="header-text text-center">Features</h4>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-note2"></i>
+                                </div>
+                                <div class="text">
+                                    <h4>Morden Web Skills</h4>
+                                    <p>Client was created by React with Node.js in the responsible web design concept.<br> 
+                                       In server side, It used Sqlite3 database on the Express server.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-bell"></i>
+                                </div>
+                                <h4>Smart Notifications</h4>
+                                <p>Convenient SMS text and email send functions make sure users always know others' request for teaching and learning.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card card-blue">
+                                <div class="icon">
+                                    <i class="pe-7s-graph1"></i>
+                                </div>
+                                <h4>Upgrading its performance</h4>
+                                <p>I am developing booking & schedule management for Mentors. Also, using GIS map, I will apply to find nearest Mentors and Mentees.</p>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+           
+            <div class="section section-no-padding">
+                <div class="parallax filter-gradient blue" data-color="blue">
+                    <div class="parallax-background">
+                        <img class ="parallax-background-image" src="assets/img/template/bg3.jpg"/>
+                    </div>
+                    <div class="info">
+                        <h1>Now, I am making a GIS web application!</h1>
+                        <p>based on my group projects in the coding bootcamp.</p>
+                        <a href="http://www.creative-tim.com/product/awesome-landing-page" class="btn btn-neutral btn-lg btn-fill">DOWNLOAD</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="section section-testimonial">
+                    <div class="container">
+                        <h4 class="header-text text-center">What people think</h4>
+                        <div id="carousel-example-generic" class="carousel fade" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+                                    <div class="mask">
+                                        <img src="assets/img/faces/face-4.jpg">
+                                    </div>
+                                    <div class="carousel-testimonial-caption">
+                                        <p>Jay Z, Producer</p>
+                                        <h3>"I absolutely love your app! It's truly amazing and looks awesome!"</h3>
+                                    </div>
+                                </div>
+                                <div class="item active">
+                                    <div class="mask">
+                                        <img src="assets/img/faces/face-3.jpg">
+                                    </div>
+                                    <div class="carousel-testimonial-caption">
+                                        <p>Drake, Artist</p>
+                                        <h3>"This is one of the most awesome apps I've ever seen! Wish you luck Creative Tim!"</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="mask">
+                                        <img src="assets/img/faces/face-2.jpg">
+                                    </div>
+                                    <div class="carousel-testimonial-caption">
+                                        <p>Rick Ross, Musician</p>
+                                        <h3>"Loving this! Just picked it up the other day. Thank you for the work you put into this."</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators carousel-indicators-blue">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
 
-  </body>
+            <footer class="footer">
+                <div class="container">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                Home
+                                </a>
+                            </li>                           
+                            <li>
+                                <a href="#">
+                                Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blog-home.html" target="_blank">
+                                Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="social-area pull-right">
+                        <a class="btn btn-social btn-facebook btn-simple">
+                        <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a class="btn btn-social btn-twitter btn-simple">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-social btn-pinterest btn-simple">
+                        <i class="fa fa-pinterest"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="container">
+                <!-- <h2>Modal Example</h2> -->
+                <!-- Trigger the modal with a button -->
+                <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Seek Mentor Demo</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Responsible design & Smart Notification by open source API.</p>
+                        <img src="assets/img/seekmentor.gif"/>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+
+    </body>
+    
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/js/awesome-landing-page.js" type="text/javascript"></script>
 </html>

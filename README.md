@@ -7,3 +7,4 @@ Shane's blog
    
  Now, I constantly evolved my IT skill in response to clients' needs and the changes in the market.  
  From this blog, I would like to introduce my story of IT  
+
