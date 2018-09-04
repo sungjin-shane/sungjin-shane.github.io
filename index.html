@@ -29,12 +29,13 @@
                     <span class="icon-bar bar3"></span>
                     </button>
                     <a href="http://www.creative-tim.com">
+                    <a href="" data-toggle="modal" data-target="#myModal3" target="_blank"> 
                         <div class="logo-container">
                             <div class="logo">
                                 <img src="assets/img/shane.png" alt="Shane Park">
                             </div>
                             <div class="brand">
-                            Enthusiasm for IT
+                            Contact Me
                             </div>
                         </div>
                     </a>
@@ -79,11 +80,12 @@
                         </div>
                         <div class="col-md-6 col-md-offset-1">
                             <div class="description">
-                                <h3>Having a passion for IT, Empathizing with colleagues, Contributing to a team</h3>
-                                <br>
+                                <h4>Having a passion for IT, Empathizing with colleagues, Contributing to a team</h4>
+                                <a href="resume-main.html" id="resume" class="btn btn-fill btn-info" data-button="info">Go Shane's Resume</a>
                                 <h5>If someone asks me "What were the most important things in the past IT career?"</h5>
-                                <h5>I can confidently say that the most significant values that always has been supported me were Passion for IT, Empathizing with others and Contributing to a Team. Also, this is the reason that I am still able to evolve as a wellbeing IT expert putting passion into a team!</h5>
-                            </div>
+                                <h5>I can confidently say that the most significant values that always has been supported me were Passion for IT, Empathizing with others and Contributing to a Team. 
+                                    Also, it is the reason I am still able to evolve as a wellbeing IT expert putting passion into a team!</h5>
+                            </div>                           
                             <!-- <div class="buttons">
                                 <button class="btn btn-fill btn-neutral">
                                 <i class="fa fa-apple"></i> Appstore
@@ -366,8 +368,8 @@
                                 </a>
                             </li>                           
                             <li>
-                                <a href="#">
-                                Portfolio
+                                <a href="resume-main.html">
+                                Resume
                                 </a>
                             </li>
                             <li>
@@ -375,19 +377,13 @@
                                 Blog
                                 </a>
                             </li>
+                            <li>
+                                <a>
+                                Contact me: sjpark731015@gmail.com
+                                </a>
+                            </li>
                         </ul>
-                    </nav>
-                    <div class="social-area pull-right">
-                        <a class="btn btn-social btn-facebook btn-simple">
-                        <i class="fa fa-facebook-square"></i>
-                        </a>
-                        <a class="btn btn-social btn-twitter btn-simple">
-                        <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-social btn-pinterest btn-simple">
-                        <i class="fa fa-pinterest"></i>
-                        </a>
-                    </div>        
+                    </nav>            
                 </div>
             </footer>
         </div>
@@ -399,49 +395,68 @@
             
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Seek Mentor Demo</h4>
-                    </div>
-                    <div class="modal-body">
-                    <p>Responsible design & Smart Notification by open source API.</p>
-                    <img src="assets/img/seekmentor.gif"/>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-                
+                <div class="modal-dialog modal-lg">                   
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Seek Mentor Demo</h4>
+                        </div>
+                        <div class="modal-body">
+                        <p>Responsible design & Smart Notification by open source API.</p>
+                        <img style="max-width: 100%; height: auto;" src="assets/img/seekmentor-big.gif" alt="GIS App" />  
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>                
                 </div>
             </div>              
         <!-- </div> -->
 
-        <div class="container">
-        <!-- Modal2 -->
-            <div class="modal fade" id="myModal2" role="dialog">
-                <div class="modal-dialog">
-                
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog modal-lg">            
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">GIS App Demo</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">GIS App for find nearest Mentor</h4>
                     </div>
                     <div class="modal-body">
-                    <p>Using React+Redux framework and leaflet Map source API.</p>
-                    <img src="assets/img/map.gif"/>
+                    <p>Responsible design & Smart Notification by open source API.</p>
+                        <img style="max-width: 100%; height: auto;" src="assets/img/map-big.gif" alt="GIS App" />        
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
-                </div>                
-                </div>
-            </div> 
-        </div>
+                </div>            
+            </div>
+        </div>   
+
+        
+    <!-- Modal -->
+    <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog modal-sm">            
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Shane's Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+                            <li>Location:</span> Auckland, New Zealand</li>
+                            <li>Email:</span><a href="#"> sjpark731015@gmail.com</a></li>
+                        </ul>
+                        <img style="max-width: 100%; height: auto;" src="assets/img/template/contact.png" alt="GIS App" />        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>            
+            </div>
+        </div>   
 
               
 
